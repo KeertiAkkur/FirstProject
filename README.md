@@ -35,7 +35,6 @@ Technology Stack
 - Tools: Pycharm
 
 Project Structure:
-
 online-ticket-booking-app/
 ├── app.py
 ├── README.md
@@ -49,6 +48,24 @@ online-ticket-booking-app/
 │ └── style.css
 └── database/
 └── tickets.db
+
+Input Validation:
+This program validates user input when booking tickets:
+Event Selection Validation
+•	Must be a whole number.
+•	Must match an available event (1–3).
+•	Handles invalid input using try/except.
+Ticket Quantity Validation
+•	Must be a whole number.
+•	Must be greater than 0.
+•	Must not exceed available tickets.
+•	Uses a custom exception class (InvalidTicketQuantityError).
+Error Handling
+•	Prevents program crashes.
+•	Displays clear and user-friendly error messages.
+•	Allows user to retry input until valid.
+
+
 
 
 
