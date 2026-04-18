@@ -50,5 +50,29 @@ online-ticket-booking-app/
 └── database/
 └── tickets.db
 
+Database Selection & Justification
+
+For this project, SQLite (Relational Database) was selected as the data storage model.
+
+Reasons for Selection:
+Transaction Integrity (Critical Requirement)
+The system prevents double booking using transactions (BEGIN, COMMIT, ROLLBACK)
+Ensures atomic operations during seat reservation and booking
+Relational Structure Fits the Problem
+Entities like:
+Users
+Events
+Seats
+Bookings
+Naturally modeled using relational tables
+Concurrency Control
+SQLite supports locking and transactional consistency
+Important for preventing race conditions in seat booking
+Zero Cost & Easy Setup
+No server required
+Works locally with Python (sqlite3)
+Ideal for academic/demo projects
+Schema Enforcement
+
 
 
